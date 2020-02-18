@@ -1,0 +1,84 @@
+body,
+html {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    height: 100%;
+}
+
+#wrapper {
+    position: relative;
+    height: 100%;
+}
+
+#wrapper .bg {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transition: all 0.5s ease-in-out;
+    opacity: .3;
+}
+#wrapper .bg.hover {
+    opacity: .8;
+}
+#wrapper .bg-wa {
+    background: url('../images/wa.jpg') no-repeat center center;
+    background-size: cover;
+}
+#wrapper .bg-qld {
+    right: 0;
+    left: auto;
+    background: url('../images/qld.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+#header {
+    padding: 20px;
+    position: relative;
+    z-index: 9;
+}
+
+#header .logo {
+    max-width: 100px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#map {
+    max-width: 500px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 9;
+}
+
+.state.hover,
+.state.wa:hover,
+.state.qld:hover{
+    fill: #33A219;
+}
+
+.title {
+    font-size: 150px;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    fill: rgb(25, 95, 9);
+}
+.title.hover,
+.title:hover {
+    fill: #fff;
+}
+
+.intro {
+    padding: 0 20px 20px;
+    text-align: center;
+}
+
+h1,
+h2 span {
+    color: #33A219;
+}
+
+.nomargin {
+    margin: 0;
+}
